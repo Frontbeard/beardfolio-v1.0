@@ -1,5 +1,9 @@
 import { useState } from "react";
 import { ExternalLink, Github, ChevronDown } from "lucide-react";
+import beardfolio from "../assets/beardfolio.png";
+import beardfolioV1 from "../assets/beardfoliov1.0.png";
+import realchat from "../assets/realchat.png";
+
 
 interface Project {
   title: string;
@@ -16,7 +20,7 @@ const projects: Project[] = [
     title: "My Portfolio v0",
     description: "The first version of my portfolio. Here, you’ll find some details about me, my experience, and projects.",
     technologies: ["React", "Vite", "JavaScript"],
-    imageUrl: "/placeholder.svg?height=200&width=300",
+    imageUrl: beardfolio,
     liveUrl: "https://beardfolio.vercel.app/",
     githubUrl: "https://github.com/Frontbeard/beardfolio",
     date: "2024-12-02",
@@ -25,7 +29,7 @@ const projects: Project[] = [
     title: "Beardfolio v1.0",
     description: "A bold beard deserves a bold portfolio with clean, powerful code. This is the latest evolution of my portfolio.",
     technologies: ["React", "Vite", "TypeScript", "ShadCN/UI"],
-    imageUrl: "/placeholder.svg?height=200&width=300",
+    imageUrl: beardfolioV1,
     liveUrl: "https://www.frontbeard.xyz/",
     githubUrl: "https://github.com/Frontbeard/beardfolio-v1.0",
     date: "2025-02-20",
@@ -34,9 +38,9 @@ const projects: Project[] = [
     title: "Real-time Chat",
     description: "Real-time chat application where you can join instantly with a nickname, send and view previous messages. Technical test.",
     technologies: ["React", "Node.JS", "Express", "MongoDB"],
-    imageUrl: "/placeholder.svg?height=200&width=300",
-    liveUrl: "https://yourportfolio.com",
-    githubUrl: "https://github.com/yourusername/portfolio",
+    imageUrl: realchat,
+    liveUrl: "https://challenge-mern-chat-css-cliente.vercel.app/",
+    githubUrl: "https://github.com/Frontbeard/challenge-mern-chat-css",
     date: "2024-03-04",
   },
   {
@@ -44,7 +48,8 @@ const projects: Project[] = [
     description: "A simple, functional online calculator designed to sharpen my technical skills.",
     technologies: ["JavaScript"],
     imageUrl: "/placeholder.svg?height=200&width=300",
-    githubUrl: "https://frontbeard.github.io/calculator/",
+    liveUrl: "https://frontbeard.github.io/calculator/",
+    githubUrl: "https://github.com/Frontbeard/calculator",
     date: "2022-06-21",
   },
 ];
