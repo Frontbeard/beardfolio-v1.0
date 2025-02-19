@@ -1,72 +1,62 @@
-"use client"
-
-import { useState } from "react"
-import { ExternalLink, Github, ChevronDown } from "lucide-react"
+import { useState } from "react";
+import { ExternalLink, Github, ChevronDown } from "lucide-react";
 
 interface Project {
-  title: string
-  description: string
-  technologies: string[]
-  imageUrl: string
-  liveUrl?: string
-  githubUrl?: string
-  date: string
+  title: string;
+  description: string;
+  technologies: string[];
+  imageUrl: string;
+  liveUrl?: string;
+  githubUrl?: string;
+  date: string;
 }
 
 const projects: Project[] = [
   {
-    title: "E-commerce Platform",
-    description: "A full-featured e-commerce platform with product listings, cart functionality, and secure checkout.",
-    technologies: ["React", "Node.js", "MongoDB", "Stripe"],
+    title: "My Portfolio v0",
+    description: "The first version of my portfolio. Here, you’ll find some details about me, my experience, and projects.",
+    technologies: ["React", "Vite", "JavaScript"],
     imageUrl: "/placeholder.svg?height=200&width=300",
-    liveUrl: "https://example-ecommerce.com",
-    githubUrl: "https://github.com/yourusername/ecommerce-platform",
-    date: "2023-05-15",
+    liveUrl: "https://beardfolio.vercel.app/",
+    githubUrl: "https://github.com/Frontbeard/beardfolio",
+    date: "2024-12-02",
   },
   {
-    title: "Task Management App",
-    description: "A collaborative task management application with real-time updates and team features.",
-    technologies: ["Vue.js", "Firebase", "Vuex"],
+    title: "Beardfolio v1.0",
+    description: "A bold beard deserves a bold portfolio with clean, powerful code. This is the latest evolution of my portfolio.",
+    technologies: ["React", "Vite", "TypeScript", "ShadCN/UI"],
     imageUrl: "/placeholder.svg?height=200&width=300",
-    liveUrl: "https://example-taskmanager.com",
-    githubUrl: "https://github.com/yourusername/task-manager",
-    date: "2023-02-10",
+    liveUrl: "https://www.frontbeard.xyz/",
+    githubUrl: "https://github.com/Frontbeard/beardfolio-v1.0",
+    date: "2025-02-20",
   },
   {
-    title: "Portfolio Website",
-    description: "A responsive portfolio website showcasing my projects and skills.",
-    technologies: ["Next.js", "Tailwind CSS", "Framer Motion"],
+    title: "Real-time Chat",
+    description: "Real-time chat application where you can join instantly with a nickname, send and view previous messages. Technical test.",
+    technologies: ["React", "Node.JS", "Express", "MongoDB"],
     imageUrl: "/placeholder.svg?height=200&width=300",
     liveUrl: "https://yourportfolio.com",
     githubUrl: "https://github.com/yourusername/portfolio",
-    date: "2022-11-20",
+    date: "2024-03-04",
   },
   {
-    title: "Weather Forecast App",
-    description: "A mobile app providing accurate weather forecasts with beautiful visualizations.",
-    technologies: ["React Native", "OpenWeather API", "Redux"],
+    title: "Calculator",
+    description: "A simple, functional online calculator designed to sharpen my technical skills.",
+    technologies: ["JavaScript"],
     imageUrl: "/placeholder.svg?height=200&width=300",
-    githubUrl: "https://github.com/yourusername/weather-app",
-    date: "2022-08-05",
+    githubUrl: "https://frontbeard.github.io/calculator/",
+    date: "2022-06-21",
   },
-  {
-    title: "Blog CMS",
-    description: "A custom content management system for managing blog posts and user comments.",
-    technologies: ["WordPress", "PHP", "MySQL", "Custom Theme"],
-    imageUrl: "/placeholder.svg?height=200&width=300",
-    liveUrl: "https://example-blog.com",
-    date: "2022-06-30",
-  },
-]
+];
 
 export function ProjectGallery() {
-  const [sortOrder, setSortOrder] = useState<"newest" | "oldest">("newest")
+  const [sortOrder, setSortOrder] = useState<"newest" | "oldest">("newest");
 
   const sortedProjects = [...projects].sort((a, b) => {
-    const dateA = new Date(a.date).getTime()
-    const dateB = new Date(b.date).getTime()
-    return sortOrder === "newest" ? dateB - dateA : dateA - dateB
-  })
+    const dateA = new Date(a.date).getTime();
+    const dateB = new Date(b.date).getTime();
+    return sortOrder === "newest" ? dateB - dateA : dateA - dateB;
+  });
 
   return (
     <div className="bg-gray-100 dark:bg-gray-800 rounded-3xl p-6 max-w-6xl mx-auto">
@@ -139,6 +129,5 @@ export function ProjectGallery() {
         ))}
       </div>
     </div>
-  )
+  );
 }
-

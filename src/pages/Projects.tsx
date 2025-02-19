@@ -1,6 +1,6 @@
 import { ProjectGallery } from "@/components/project-gallery";
-import { ThemeToggle } from "@/components/theme-toggle";
 import { useNavigate } from "react-router-dom";
+import { FloatingNavbar } from "@/components/floating-navbar"
 
 export default function Projects() {
   const navigate = useNavigate();
@@ -15,9 +15,9 @@ export default function Projects() {
           >
             ← Back to CV
           </button>
-          <ThemeToggle />
         </div>
         <ProjectGallery />
+        <FloatingNavbar />
       </div>
     </div>
   );

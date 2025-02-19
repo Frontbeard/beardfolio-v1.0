@@ -4,7 +4,6 @@ export function EducationSection() {
       <h2 className="text-xl font-bold mb-3 dark:text-white">Education</h2>
       <div className="space-y-3">
         
-        {/* Full Stack Web Developer */}
         <a href="https://d2rf2c6bvm78n9.cloudfront.net/new-cert?id=9d6be16a3ad7effa6531c305b3249d9cbf27149d97b0347b1e194c5bb68f5a4b" target="_blank" rel="noopener noreferrer"
           className="block bg-white dark:bg-gray-700 rounded-2xl p-3 transition-all duration-300 
           hover:shadow-lg hover:scale-[1.02] hover:bg-[#7f4ca5] dark:hover:bg-[#7f4ca5] 
@@ -31,8 +30,7 @@ export function EducationSection() {
           </div>
         </a>
 
-        {/* Frontend Development */}
-        <a href="TU_LINK_CERTIFICADO_CODERHOUSE" target="_blank" rel="noopener noreferrer"
+        <a href="https://www.coderhouse.com/ar/" target="_blank" rel="noopener noreferrer"
           className="block bg-white dark:bg-gray-700 rounded-2xl p-3 transition-all duration-300 
           hover:shadow-lg hover:scale-[1.02] hover:bg-[#7f4ca5] dark:hover:bg-[#7f4ca5] 
           hover:text-white dark:hover:text-white group">
