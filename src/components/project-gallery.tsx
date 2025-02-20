@@ -3,6 +3,7 @@ import { ExternalLink, Github, ChevronDown } from "lucide-react";
 import beardfolio from "../assets/beardfolio.png";
 import beardfolioV1 from "../assets/beardfoliov1.0.png";
 import realchat from "../assets/realchat.png";
+import calculator from "../assets/calculator.png";
 
 
 interface Project {
@@ -47,7 +48,7 @@ const projects: Project[] = [
     title: "Calculator",
     description: "A simple, functional online calculator designed to sharpen my technical skills.",
     technologies: ["JavaScript"],
-    imageUrl: "/placeholder.svg?height=200&width=300",
+    imageUrl: calculator,
     liveUrl: "https://frontbeard.github.io/calculator/",
     githubUrl: "https://github.com/Frontbeard/calculator",
     date: "2022-06-21",
