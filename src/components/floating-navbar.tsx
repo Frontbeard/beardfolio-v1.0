@@ -2,6 +2,7 @@ import { useState, useEffect } from "react";
 import { NavLink } from "react-router-dom";
 import { ThemeToggle } from "./theme-toggle";
 import { Home, FolderKanban, FileDown } from "lucide-react";
+import resume from "../assets/resume.pdf";
 
 export function FloatingNavbar() {
   const [isVisible, setIsVisible] = useState(true);
@@ -60,7 +61,7 @@ export function FloatingNavbar() {
           <FolderKanban size={20} />
         </NavLink>
         <a
-          href="/path-to-your-resume.pdf"
+          href= {resume}
           target="_blank"
           rel="noopener noreferrer"
           className="p-2 rounded-full text-gray-700 hover:bg-white/20 dark:text-gray-200 dark:hover:bg-gray-700/50"
