@@ -56,7 +56,7 @@ const projects: Project[] = [
   },
   {
     title: "LR Studio",
-    description: "A simple, functional online calculator designed to sharpen my technical skills.",
+    description: "Official website of Leo Rodriguez, casting director for Disney+ and Star+. He is also a teacher of on-camera acting.",
     technologies: ["WordPress"],
     imageUrl: lrstudio,
     liveUrl: "https://leorodriguez.com",
