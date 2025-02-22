@@ -4,6 +4,7 @@ import beardfolio from "../assets/beardfolio.png";
 import beardfolioV1 from "../assets/beardfoliov1.0.png";
 import realchat from "../assets/realchat.png";
 import calculator from "../assets/calculator.png";
+import lrstudio from "../assets/lrstudio.png";
 
 
 interface Project {
@@ -52,6 +53,14 @@ const projects: Project[] = [
     liveUrl: "https://frontbeard.github.io/calculator/",
     githubUrl: "https://github.com/Frontbeard/calculator",
     date: "2022-06-21",
+  },
+  {
+    title: "LR Studio",
+    description: "A simple, functional online calculator designed to sharpen my technical skills.",
+    technologies: ["WordPress"],
+    imageUrl: lrstudio,
+    liveUrl: "https://leorodriguez.com",
+    date: "2024-01-10",
   },
 ];
 
