@@ -18,7 +18,7 @@ export function ExperienceSection() {
                 most recent
               </span>
               <span className="text-gray-600 dark:text-gray-300 group-hover:text-white">
-                Mar. 2024 - Present
+                Mar. 2024 - Nov. 2024
               </span>
             </div>
           </div>
